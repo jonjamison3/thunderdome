@@ -16,7 +16,8 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "../node_modules/primeng/resources/themes/ui-darkness/theme.css"
+        "../node_modules/primeng/resources/themes/ui-darkness/theme.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [],
       "environments": {

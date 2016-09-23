@@ -1,6 +1,6 @@
-<h1>
-  {{title}}
-</h1>
-<a routerLink="/about">About</a>
-<a routerLink="/apiz">Apiz</a>
+<h1>{{title}}</h1>
+<div>
+<p-tabMenu [model]="items"></p-tabMenu>
+
 <router-outlet></router-outlet>
+</div>
