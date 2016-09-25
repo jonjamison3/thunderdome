@@ -17,7 +17,8 @@ import {TabMenuModule,
 import { NavComponent } from './shared/nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { LandingComponent } from './landing/landing.component';
-import {SpotifyService} from './apiz/spotify.service';
+import {SpotifyService} from './apiz/spotify/spotify.service';
+import { SpotifyComponent } from './apiz/spotify/spotify.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import {SpotifyService} from './apiz/spotify.service';
     NavComponent,
     TitleComponent,
     LandingComponent,
+    SpotifyComponent,
   ],
   imports: [
     BrowserModule,

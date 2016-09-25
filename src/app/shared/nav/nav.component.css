@@ -5,3 +5,7 @@ ul, li{
 .ui-tabmenu{
     list-style: 'none'; 
 }
+#sidebar{
+    
+    height: 100vh; 
+}

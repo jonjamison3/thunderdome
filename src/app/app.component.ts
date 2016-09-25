@@ -7,5 +7,4 @@ import { NavComponent } from './shared/nav/nav.component';
 })
 export class AppComponent {
   title = 'Thunderdome';
-  subtitle = 'Where Jon goes to show off!';
 }
