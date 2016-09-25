@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  subtitle = 'where I\'ll be practicing use of apis to the theme of a terrible movie!';
+  subtitle = 'Where I hope to be showing off some api neatness';
   constructor() { }
 
   ngOnInit() {

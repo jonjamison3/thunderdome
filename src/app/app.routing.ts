@@ -3,11 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ApizComponent }      from './apiz/apiz.component';
 import { AboutComponent }      from './about/about.component';
+import { DashboardComponent }      from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    component: AboutComponent
+    component: DashboardComponent
+  },
+  {
+    path: 'home',
+    component: DashboardComponent
   },
   {
     path: 'apiz',

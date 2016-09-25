@@ -6,19 +6,26 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ApizComponent } from './apiz/apiz.component';
 import { AboutComponent } from './about/about.component';
-import {TabMenuModule, MenuItem} from 'primeng/primeng';
+import {TabMenuModule, MenuModule} from 'primeng/primeng';
+import { NavComponent } from './shared/nav/nav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { TitleComponent } from './title/title.component';
 @NgModule({
   declarations: [
     AppComponent,
     ApizComponent,
     AboutComponent,
+    NavComponent,
+    DashboardComponent,
+    TitleComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routing,
-    TabMenuModule
+    TabMenuModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
