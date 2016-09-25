@@ -19,6 +19,7 @@ import { TitleComponent } from './title/title.component';
 import { LandingComponent } from './landing/landing.component';
 import {SpotifyService} from './apiz/spotify/spotify.service';
 import { SpotifyComponent } from './apiz/spotify/spotify.component';
+import { HeaderComponent } from './shared/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { SpotifyComponent } from './apiz/spotify/spotify.component';
     TitleComponent,
     LandingComponent,
     SpotifyComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

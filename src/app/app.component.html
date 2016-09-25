@@ -1,12 +1,7 @@
-<div class="container">
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <app-nav [title]="title"></app-nav>
-                <div class="col-xs-9">
-                <router-outlet></router-outlet>
-                </div>
-            </div>
+<div class="site-wrapper">
+        <app-header></app-header>
+        <app-nav [title]="title"></app-nav>
+        <div id="mainRouter" class="col-xs-9">
+            <router-outlet></router-outlet>
         </div>
-    </div>
 </div>
