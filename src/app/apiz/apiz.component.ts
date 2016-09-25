@@ -9,11 +9,11 @@ import { Subject }           from 'rxjs/Subject';
 })
 export class ApizComponent implements OnInit {
   // /private searchTerm = new Subject<string>();
-  songs: any;
+  tracks: Observable<any[]>;
   constructor(public spotifyService: SpotifyService) { }
 
   ngOnInit(): void {
-    this.songs = this.spotifyService.getSongs(); 
+    this.spotifyService.getSetTracks().subscribe(tracks=> this.tracks = tracks);
     // this.songs = this.searchTerm  // wait for 300ms pause in events
     //   .distinctUntilChanged()   // ignore if next search term is same as previous
     //   .switchMap(searchTerm => searchTerm   // switch to new observable each time
@@ -33,5 +33,4 @@ export class ApizComponent implements OnInit {
   //       // or the observable of empty songs if no search term
   //       : Observable.of<any[]>([]));
   // }
-  
 }

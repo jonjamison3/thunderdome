@@ -10,6 +10,8 @@ import { ApizComponent } from './apiz/apiz.component';
 import { AboutComponent } from './about/about.component';
 import {TabMenuModule,
         InputTextModule,
+        DataTableModule,
+        SharedModule,
         MenuModule
       } from 'primeng/primeng';
 import { NavComponent } from './shared/nav/nav.component';
@@ -32,7 +34,9 @@ import {SpotifyService} from './apiz/spotify.service';
     routing,
     TabMenuModule,
     MenuModule,
-    InputTextModule
+    InputTextModule,
+    DataTableModule,
+    SharedModule,
   ],
   providers: [SpotifyService],
   bootstrap: [AppComponent]

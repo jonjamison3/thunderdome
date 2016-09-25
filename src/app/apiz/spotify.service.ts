@@ -5,9 +5,11 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class SpotifyService {
+  trackSearchUrl: String; 
   terms: String; 
-  response: any; 
-  constructor(public http: Http) { }
+  constructor(public http: Http) {
+    this.trackSearchUrl = 'http://api.spotify.com/v1/search?q=thunderdome&type=track';
+   }
   // songSearch (term: String):Observable<any[]>{
   //   this.terms = term;
   //   this.response = this.http
@@ -16,8 +18,9 @@ export class SpotifyService {
   //   console.log(this.response);
   //   return this.response;
   // }
-  getSongs(): Promise.resolve<any>{
-    return this.http.get('http://api.spotify.com/v1/search?q=some&type=track').toPromise().then(res=>res.json().tracks as any);
+  getSetTracks() {
+    return this.http.get( 'http://api.spotify.com/v1/search?q=thunderdome&type=track')
+    .map(res => res.json().tracks.items);
   }
 
 }
