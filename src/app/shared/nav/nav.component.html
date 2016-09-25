@@ -1,15 +1,22 @@
-<!--<p-tabMenu [model]="items"></p-tabMenu>-->
-
-    <div class="masthead clearfix">
-      <div class="inner">
-        <app-title [title]="title"></app-title>
-        
-<nav class="navbar navbar-light bg-faded">
-  <ul class="nav masthead-nav">
-        <div class="nav-item"  *ngFor="let item of items">
-        <li>
-            <a class="nav-link" href="" [routerLink]="item.routerLink">{{item.name}}</a>
-        </li>
+<!--<nav class="navbar navbar-light bg-faded">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <div class="collapse" id="exCollapsingNavbar">
+        <div class="bg-inverse p-a-1">
+            <div class="ui-tabmenu ui-widget ui-widget-content ui-corner-all">
+                <li>Extra navigation things</li>
+                <li>Extra navigation things</li>
+                <li>Extra navigation things</li>
+            </div>
+        </div>
     </div>
-  </ul>
-</nav>
+</nav>-->
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div *ngIf="items" class="list-group">
+            <!--<p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>-->
+            <div *ngFor="let item of items" class="ui-tabmenu ui-widget ui-widget-content ui-corner-all">
+                <a [routerLink]="item.routerLink" >{{item.routerLink}}</a>
+            </div>
+          </div>
+        </div>
