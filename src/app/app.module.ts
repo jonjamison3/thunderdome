@@ -20,6 +20,8 @@ import { LandingComponent } from './landing/landing.component';
 import {SpotifyService} from './apiz/spotify/spotify.service';
 import { SpotifyComponent } from './apiz/spotify/spotify.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { FixedSearchComponent } from './apiz/spotify/fixed-search/fixed-search.component';
+import { DynamicSearchComponent } from './apiz/spotify/dynamic-search/dynamic-search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,8 @@ import { HeaderComponent } from './shared/header/header.component';
     LandingComponent,
     SpotifyComponent,
     HeaderComponent,
+    FixedSearchComponent,
+    DynamicSearchComponent,
   ],
   imports: [
     BrowserModule,

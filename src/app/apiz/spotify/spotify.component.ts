@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {SpotifyService} from  './spotify.service';
 import { Observable }        from 'rxjs/Observable';
 import { Subject }           from 'rxjs/Subject';
+import { FixedSearchComponent } from './fixed-search/fixed-search.component';
+import { DynamicSearchComponent } from './dynamic-search/dynamic-search.component';
 @Component({
   selector: 'app-spotify',
   templateUrl: './spotify.component.html',
@@ -13,7 +15,7 @@ export class SpotifyComponent implements OnInit {
   constructor(public spotifyService: SpotifyService) { }
 
   ngOnInit(): void {
-    this.spotifyService.getSetTracks().subscribe(tracks=> this.tracks = tracks);
+    //this.spotifyService.getSetTracks().subscribe(tracks=> this.tracks = tracks);
     // this.songs = this.searchTerm  // wait for 300ms pause in events
     //   .distinctUntilChanged()   // ignore if next search term is same as previous
     //   .switchMap(searchTerm => searchTerm   // switch to new observable each time

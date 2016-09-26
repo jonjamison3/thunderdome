@@ -1,8 +1,8 @@
-<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+<div class="col-xs-2 sidebar-offcanvas" id="sidebar">
     <div *ngIf="items" class="list-group">
     <!--<p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>-->
         <div *ngFor="let item of items" class="ui-widget">
-            <a class="list-group-item ui-widget-content" [routerLink]="item.routerLink" >{{item.routerLink}}</a>
+            <a class="text-xs-right list-group-item ui-widget-content" [routerLink]="item.routerLink" >{{item.routerLink}}</a>
         </div>
     </div>
 </div>

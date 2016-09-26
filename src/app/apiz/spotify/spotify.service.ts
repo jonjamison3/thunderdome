@@ -8,7 +8,6 @@ export class SpotifyService {
   trackSearchUrl: String; 
   terms: String; 
   constructor(public http: Http) {
-    this.trackSearchUrl = 'http://api.spotify.com/v1/search?q=thunderdome&type=track';
    }
   // songSearch (term: String):Observable<any[]>{
   //   this.terms = term;
@@ -20,6 +19,11 @@ export class SpotifyService {
   // }
   getSetTracks() {
     return this.http.get( 'http://api.spotify.com/v1/search?q=thunderdome&type=track')
+    .map(res => res.json().tracks.items);
+  }
+  searchTracks(term: string) {
+    return this.http.get( `http://api.spotify.com/v1/search?q=${term}&type=track`)
+    .debounceTime(300)
     .map(res => res.json().tracks.items);
   }
 
