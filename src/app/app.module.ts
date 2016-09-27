@@ -24,6 +24,8 @@ import { FixedSearchComponent } from './apiz/spotify/fixed-search/fixed-search.c
 import { DynamicSearchComponent } from './apiz/spotify/dynamic-search/dynamic-search.component';
 import { UserSearchComponent } from './apiz/facebook/user-search/user-search.component';
 import { FacebookComponent } from './apiz/facebook/facebook.component';
+import { UserSearchService } from './apiz/facebook/user-search/user-search.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +53,7 @@ import { FacebookComponent } from './apiz/facebook/facebook.component';
     DataTableModule,
     SharedModule,
   ],
-  providers: [SpotifyService],
+  providers: [SpotifyService, UserSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

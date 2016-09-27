@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SpotifyService} from  './spotify.service';
+import { SpotifyService } from  './spotify.service';
 import { Observable }        from 'rxjs/Observable';
-import { Subject }           from 'rxjs/Subject';
-import { FixedSearchComponent } from './fixed-search/fixed-search.component';
-import { DynamicSearchComponent } from './dynamic-search/dynamic-search.component';
 @Component({
   selector: 'app-spotify',
   templateUrl: './spotify.component.html',
