@@ -1,7 +1,8 @@
-<div class="site-wrapper">
-        <app-header></app-header>
-        <app-nav [title]="title"></app-nav>
+
+    <app-header [title]="title"></app-header>
+    <app-nav></app-nav>
+    <div class="site-wrapper">
         <div id="mainRouter" class="col-xs-9">
             <router-outlet></router-outlet>
         </div>
-</div>
+    </div>

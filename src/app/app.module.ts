@@ -22,6 +22,9 @@ import { SpotifyComponent } from './apiz/spotify/spotify.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FixedSearchComponent } from './apiz/spotify/fixed-search/fixed-search.component';
 import { DynamicSearchComponent } from './apiz/spotify/dynamic-search/dynamic-search.component';
+import { UserSearchComponent } from './apiz\facebook\user-search/user-search.component';
+import { FacebookComponent } from './facebook/facebook.component';
+import { FacebookComponent } from './apiz\facebook/facebook.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +37,9 @@ import { DynamicSearchComponent } from './apiz/spotify/dynamic-search/dynamic-se
     HeaderComponent,
     FixedSearchComponent,
     DynamicSearchComponent,
+    UserSearchComponent,
+    FacebookComponent,
+    FacebookComponent,
   ],
   imports: [
     BrowserModule,
