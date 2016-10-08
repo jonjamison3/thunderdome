@@ -23,8 +23,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FixedSearchComponent } from './apiz/spotify/fixed-search/fixed-search.component';
 import { DynamicSearchComponent } from './apiz/spotify/dynamic-search/dynamic-search.component';
 import { UserSearchComponent } from './apiz/facebook/user-search/user-search.component';
-import { FacebookComponent } from './apiz/facebook/facebook.component';
 import { UserSearchService } from './apiz/facebook/user-search/user-search.service';
+import {ApizModule} from './apiz/apiz.module';
 
 @NgModule({
   declarations: [
@@ -39,8 +39,6 @@ import { UserSearchService } from './apiz/facebook/user-search/user-search.servi
     FixedSearchComponent,
     DynamicSearchComponent,
     UserSearchComponent,
-    FacebookComponent,
-    FacebookComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +50,7 @@ import { UserSearchService } from './apiz/facebook/user-search/user-search.servi
     InputTextModule,
     DataTableModule,
     SharedModule,
+    ApizModule
   ],
   providers: [SpotifyService, UserSearchService],
   bootstrap: [AppComponent]

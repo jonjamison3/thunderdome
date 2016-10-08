@@ -1,7 +1,12 @@
-<h3 class="text-success text-xs-center">Predefined track finding with Spotify</h3>
-<p-dataTable [value]="tracks" class="col-xs-12">
-    <p-column field="name" header="name"></p-column>
-    <p-column field="artists.0.name" header="artist"></p-column>
-    <p-column field="album.name" header="album"></p-column>
-    <p-column field="popularity" header="Popularity"></p-column>
-</p-dataTable>
+<h3 class="text-success text-xs-center"></h3>
+<h1>Predefined track finding with Spotify
+ <span class="text-success label label-default right">NEW</span></h1>
+ <br>
+<div class="table-responsive">
+    <p-dataTable [value]="tracks" class="col-xs-12">
+        <p-column field="name" header="name"></p-column>
+        <p-column field="artists.0.name" header="artist"></p-column>
+        <p-column field="album.name" header="album"></p-column>
+        <p-column field="popularity" header="Popularity"></p-column>
+    </p-dataTable>
+</div>
