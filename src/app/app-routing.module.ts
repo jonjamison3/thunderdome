@@ -1,7 +1,6 @@
 import { NgModule }     from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { ApizComponent }      from './apiz/apiz.component';
 import { AboutComponent }      from './about/about.component';
 import { LandingComponent }      from './landing/landing.component';
 
@@ -18,7 +17,7 @@ import { LandingComponent }      from './landing/landing.component';
       },
       {
         path: 'apiz',
-        component: ApizComponent
+        loadChildren: 'app/apiz/apiz.module#ApizModule'
       },
       {
         path: 'about',

@@ -15,7 +15,7 @@ export class DynamicSearchComponent implements OnInit {
     this.term = 'Thunderdome';
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {}
   searchDynamic(term: string){
     this.spotifyService.searchTracks(term).subscribe(tracks => this.tracks = tracks);
   }

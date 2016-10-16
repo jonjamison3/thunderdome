@@ -9,22 +9,13 @@ import { AppComponent } from './app.component';
 //import { ApizComponent } from './apiz/apiz.component';
 import { AboutComponent } from './about/about.component';
 import {TabMenuModule,
-        InputTextModule,
-        DataTableModule,
         SharedModule,
         MenuModule
       } from 'primeng/primeng';
 import { NavComponent } from './shared/nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { LandingComponent } from './landing/landing.component';
-import {SpotifyService} from './apiz/spotify/spotify.service';
-import { SpotifyComponent } from './apiz/spotify/spotify.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { FixedSearchComponent } from './apiz/spotify/fixed-search/fixed-search.component';
-import { DynamicSearchComponent } from './apiz/spotify/dynamic-search/dynamic-search.component';
-import { UserSearchComponent } from './apiz/facebook/user-search/user-search.component';
-import { UserSearchService } from './apiz/facebook/user-search/user-search.service';
-import {FacebookComponent} from './apiz/facebook/facebook.component';
 import {ApizModule} from './apiz/apiz.module';
 
 @NgModule({
@@ -35,13 +26,8 @@ import {ApizModule} from './apiz/apiz.module';
     NavComponent,
     TitleComponent,
     LandingComponent,
-    SpotifyComponent,
     HeaderComponent,
-    FixedSearchComponent,
-    DynamicSearchComponent,
-    UserSearchComponent,
     LandingComponent,
-    FacebookComponent
   ],
   imports: [
     BrowserModule,
@@ -50,12 +36,10 @@ import {ApizModule} from './apiz/apiz.module';
     AppRoutingModule,
     TabMenuModule,
     MenuModule,
-    InputTextModule,
-    DataTableModule,
     SharedModule,
     ApizModule
   ],
-  providers: [SpotifyService, UserSearchService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
