@@ -1,5 +1,6 @@
 import { NgModule }            from '@angular/core';
 import { CommonModule }   from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ApizComponent }       from './apiz.component';
 import { ApizRoutingModule } from './apiz-routing.module';
 import { UserSearchComponent } from './facebook/user-search/user-search.component';
@@ -9,7 +10,8 @@ import { FacebookComponent }      from './facebook/facebook.component';
 
 @NgModule({
   imports: [
-    ApizRoutingModule
+    ApizRoutingModule,
+    FormsModule
   ],
   declarations: [
     ApizComponent,

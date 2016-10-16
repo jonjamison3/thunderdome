@@ -33,10 +33,10 @@ import { HeaderComponent } from './shared/header/header.component';
   imports: [
     BrowserModule,
     FormsModule,
+    FormsModule,
     HttpModule,
     AppRoutingModule,
     SpotifyModule,
-
     TabMenuModule,
     MenuModule,
     SharedModule,

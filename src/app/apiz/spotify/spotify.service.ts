@@ -7,6 +7,7 @@ import 'rxjs/add/operator/toPromise';
 export class SpotifyService {
   trackSearchUrl: String;
   terms: String;
+  private base_url ='https://api.spotify.com/v1';
   constructor(public http: Http) {
    }
   songSearch (term: String):Observable<any[]>{
@@ -16,11 +17,11 @@ export class SpotifyService {
                .map((r: Response) => r.json().data);
   }
   getSetTracks() {
-    return this.http.get( 'http://api.spotify.com/v1/search?q=thunderdome&type=track')
+    return this.http.get(`${this.base_url}/search?q=thunderdome&type=track`)
     .map(res => res.json().tracks.items);
   }
   searchTracks(term: string) {
-    return this.http.get( `http://api.spotify.com/v1/search?q=${term}&type=track`)
+    return this.http.get( `${this.base_url}/search?q=${term}&type=track`)
     .debounceTime(300)
     .map(res => res.json().tracks.items);
   }
