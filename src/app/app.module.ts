@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing } from './app.routing';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ApizComponent } from './apiz/apiz.component';
+//import { ApizComponent } from './apiz/apiz.component';
 import { AboutComponent } from './about/about.component';
 import {TabMenuModule,
         InputTextModule,
@@ -24,12 +24,13 @@ import { FixedSearchComponent } from './apiz/spotify/fixed-search/fixed-search.c
 import { DynamicSearchComponent } from './apiz/spotify/dynamic-search/dynamic-search.component';
 import { UserSearchComponent } from './apiz/facebook/user-search/user-search.component';
 import { UserSearchService } from './apiz/facebook/user-search/user-search.service';
+import {FacebookComponent} from './apiz/facebook/facebook.component';
 import {ApizModule} from './apiz/apiz.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ApizComponent,
+  //  ApizComponent,
     AboutComponent,
     NavComponent,
     TitleComponent,
@@ -39,12 +40,14 @@ import {ApizModule} from './apiz/apiz.module';
     FixedSearchComponent,
     DynamicSearchComponent,
     UserSearchComponent,
+    LandingComponent,
+    FacebookComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
+    AppRoutingModule,
     TabMenuModule,
     MenuModule,
     InputTextModule,
