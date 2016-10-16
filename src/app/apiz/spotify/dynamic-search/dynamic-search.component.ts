@@ -10,7 +10,7 @@ import { Subject }           from 'rxjs/Subject';
 })
 export class DynamicSearchComponent implements OnInit {
   term: string;
-  tracks: Observable<any[]>;
+  tracks: any; 
   constructor(public spotifyService: SpotifyService) {
     this.term = 'Thunderdome';
   }

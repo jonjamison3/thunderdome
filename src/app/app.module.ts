@@ -8,20 +8,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //import { ApizComponent } from './apiz/apiz.component';
 import { AboutComponent } from './about/about.component';
-import {TabMenuModule,
+import {
+        TabMenuModule,
         SharedModule,
         MenuModule
       } from 'primeng/primeng';
+import {ApizModule} from './apiz/apiz.module';
+import {SpotifyModule} from './apiz/spotify/spotify.module';
 import { NavComponent } from './shared/nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { LandingComponent } from './landing/landing.component';
 import { HeaderComponent } from './shared/header/header.component';
-import {ApizModule} from './apiz/apiz.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-  //  ApizComponent,
     AboutComponent,
     NavComponent,
     TitleComponent,
@@ -34,10 +35,11 @@ import {ApizModule} from './apiz/apiz.module';
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    SpotifyModule,
+
     TabMenuModule,
     MenuModule,
     SharedModule,
-    ApizModule
   ],
   providers: [],
   bootstrap: [AppComponent]
