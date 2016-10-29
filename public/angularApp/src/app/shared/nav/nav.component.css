@@ -1,0 +1,20 @@
+
+ul, li{
+    list-style: none; 
+}
+.ui-tabmenu{
+    list-style: 'none'; 
+}
+#sidebar{
+    padding-left: 0; 
+    height: 100vh; 
+}
+.activeTab{
+    background: #fff; 
+}
+div .ui-widget{
+    margin-left: 0;
+}
+div .ui-widget:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+<div class="col-xs-2 sidebar-offcanvas" id="sidebar">
+    <div *ngIf="items" class="list-group">
+        <div *ngFor="let item of items" class="nav-item ui-widget" [routerLink]="item.routerLink" routerLinkActive="ui-state-active">
+            <a class="text-xs-right list-group-item ui-widget-content">{{item.routerLink}}</a>
+        </div>
+    </div>
+</div>
