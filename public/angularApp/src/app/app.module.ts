@@ -4,9 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing } from './app.routing';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ApizComponent } from './apiz/apiz.component';
 import { AboutComponent } from './about/about.component';
 import {TabMenuModule,
         InputTextModule,
@@ -29,7 +28,6 @@ import {ApizModule} from './apiz/apiz.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ApizComponent,
     AboutComponent,
     NavComponent,
     TitleComponent,
@@ -44,13 +42,12 @@ import {ApizModule} from './apiz/apiz.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
+    AppRoutingModule,
     TabMenuModule,
     MenuModule,
     InputTextModule,
     DataTableModule,
-    SharedModule,
-    ApizModule
+    SharedModule
   ],
   providers: [SpotifyService, UserSearchService],
   bootstrap: [AppComponent]

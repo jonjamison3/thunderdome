@@ -1,9 +1,9 @@
 import { NgModule }            from '@angular/core';
 import { ApizComponent }       from './apiz.component';
-import { routing }             from './apiz.routing';
+import { ApizRoutingModule }             from './apiz-routing.module';
 
 @NgModule({
-  imports: [  routing ],
+  imports: [  ApizRoutingModule ],
   declarations: [
     ApizComponent,
   ]
