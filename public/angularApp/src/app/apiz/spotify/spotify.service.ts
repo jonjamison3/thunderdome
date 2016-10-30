@@ -7,13 +7,14 @@ import 'rxjs/add/operator/toPromise';
 export class SpotifyService {
   trackSearchUrl: String; 
   terms: String; 
+  response; 
   constructor(public http: Http) {
    }
   // songSearch (term: String):Observable<any[]>{
   //   this.terms = term;
   //   this.response = this.http
   //              .get(``)
-  //              .map((r: Response) => r.json().data);
+  //              .map((r: Response) => this.response = r.json().data);
   //   console.log(this.response);
   //   return this.response;
   // }

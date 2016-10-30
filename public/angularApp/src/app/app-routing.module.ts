@@ -22,7 +22,7 @@ import { LandingComponent }      from './landing/landing.component';
       },
       {
         path: 'apiz',
-        loadChildren: 'app/apiz/apiz.module#ApizModule'
+        loadChildren: '@app/apiz/apiz.module#ApizModule'
       },
       {
         path: 'about',

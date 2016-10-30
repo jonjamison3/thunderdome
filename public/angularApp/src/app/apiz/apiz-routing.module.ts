@@ -1,9 +1,7 @@
 import { NgModule }     from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ApizComponent }      from './apiz.component';
-import { SpotifyComponent }      from './spotify/spotify.component';
-import { FacebookComponent }      from './facebook/facebook.component';
-
+import {ApizLanderComponent} from './apiz-lander/apiz-lander.component'; 
 @NgModule({
   imports: [
     RouterModule.forChild([
@@ -12,19 +10,23 @@ import { FacebookComponent }      from './facebook/facebook.component';
         component: ApizComponent,
         children: [
           {
+            path: '/',
+            component: ApizLanderComponent
+          },
+          {
             path: 'spotify',
-            component: SpotifyComponent
+            loadChildren: 'app/apiz/spotify/spotify.module#SpotifyModule'
           },
           {
             path: 'facebook',
-            component: FacebookComponent
+            loadChildren: 'app/apiz/facebook/facebook.module#FacebookModule'
           }
         ]
       }
     ])
-  ], 
+  ],
   exports: [
     RouterModule
-  ]
+  ],
 })
 export class ApizRoutingModule {}

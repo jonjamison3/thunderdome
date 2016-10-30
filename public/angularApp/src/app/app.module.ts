@@ -17,8 +17,6 @@ import { NavComponent } from './shared/nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { LandingComponent } from './landing/landing.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { UserSearchComponent } from './apiz/facebook/user-search/user-search.component';
-import { UserSearchService } from './apiz/facebook/user-search/user-search.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +26,6 @@ import { UserSearchService } from './apiz/facebook/user-search/user-search.servi
     TitleComponent,
     LandingComponent,
     HeaderComponent,
-    UserSearchComponent,
   ],
   imports: [
     BrowserModule,
