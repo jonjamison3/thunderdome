@@ -8,6 +8,11 @@ import { LandingComponent }      from './landing/landing.component';
   imports: [
     RouterModule.forRoot([
       {
+        path: 'app',
+        redirectTo: '',
+        pathMatch: 'full'
+      },
+      {
         path: '',
         component: LandingComponent
       },
