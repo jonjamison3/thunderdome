@@ -1,12 +1,12 @@
 import { NgModule }     from '@angular/core';
 import { RouterModule } from '@angular/router';
-
 import { AboutComponent }      from './about/about.component';
 import { LandingComponent }      from './landing/landing.component';
 
+
 @NgModule({
   imports: [
-    RouterModule.forRoot([
+      RouterModule.forRoot([
       {
         path: '',
         component: LandingComponent
@@ -25,6 +25,8 @@ import { LandingComponent }      from './landing/landing.component';
       }
     ])
   ],
-  exports: [RouterModule]
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule {}

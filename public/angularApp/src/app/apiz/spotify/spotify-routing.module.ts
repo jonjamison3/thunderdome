@@ -1,18 +1,16 @@
 import { NgModule }     from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SpotifyComponent }      from './spotify.component';
+import { SpotifyComponent } from './spotify.component';
 
 @NgModule({
   imports: [
     RouterModule.forChild([
       {
-            path: 'spotify',
-            component: SpotifyComponent
+        path: '',
+        component: SpotifyComponent
       }
     ])
-  ], 
-  exports: [
-    RouterModule
-  ]
+  ],
+  exports: [RouterModule]
 })
 export class SpotifyRoutingModule {}

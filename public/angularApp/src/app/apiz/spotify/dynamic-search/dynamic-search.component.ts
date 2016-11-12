@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SpotifyService} from  '../spotify.service';
+import { SpotifyService } from  '../spotify.service';
+import { Header } from 'primeng/primeng';
 import { Observable }        from 'rxjs/Observable';
 import { Subject }           from 'rxjs/Subject';
 
@@ -10,12 +11,12 @@ import { Subject }           from 'rxjs/Subject';
 })
 export class DynamicSearchComponent implements OnInit {
   term: string;
-  tracks: Observable<any[]>;
+  tracks: any;
   constructor(public spotifyService: SpotifyService) {
     this.term = 'Thunderdome';
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {}
   searchDynamic(term: string){
     this.spotifyService.searchTracks(term).subscribe(tracks => this.tracks = tracks);
   }

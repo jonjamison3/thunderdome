@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-apiz',
   templateUrl: './apiz.component.html',
@@ -7,6 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ApizComponent implements OnInit {
   constructor() { }
 
-  ngOnInit(){
+  ngOnInit() {
   }
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   providers: []
 })
 export class AppComponent {
-  title = 'Thunderdome';
+  title = 'Something';
 }

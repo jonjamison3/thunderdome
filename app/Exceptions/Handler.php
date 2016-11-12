@@ -44,9 +44,37 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        return parent::render($request, $exception);
-    }
+        if ($exception instanceof NotFoundHttpException)
+        {
+        $curr_file = \Request::path();
+            $file_ex = pathinfo($curr_file, PATHINFO_EXTENSION);
+            $target = ['js', 'ico', 'jpeg', 'jpg', 'ttf', 'eot', 'woff', 'svg', 'woff2'];
 
+            if(in_array($file_ex, $target))
+            { 
+                $path = '/public/angularApp/dist/';
+                if($file_ex == 'ico') $path = '/public/angularApp/src/';
+                $file = $path.$curr_file;
+
+                return redirect($file);
+            }
+
+            if($request->is('api/*')) 
+            {
+                return response(['success'=> 'false', 'reason'=>'Page not found', 'code'=>'404', 'path'=> $curr_file]);
+            }
+
+            if($request->is('*'))
+            {
+               setcookie('url', $curr_file, time() + (60*20));
+
+               return redirect()->home();
+            }
+
+            return parent::render($request, $e);
+            return response()->view('errors.404', [], 404);
+        }
+    }
     /**
      * Convert an authentication exception into an unauthenticated response.
      *
