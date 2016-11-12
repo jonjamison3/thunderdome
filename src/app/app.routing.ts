@@ -1,26 +1,32 @@
-import { ModuleWithProviders }  from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-import { ApizComponent }      from './apiz/apiz.component';
+import { NgModule }     from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AboutComponent }      from './about/about.component';
 import { LandingComponent }      from './landing/landing.component';
 
-const appRoutes: Routes = [
-  {
-    path: '',
-    component: LandingComponent
-  },
-  {
-    path: 'home',
-    component: LandingComponent
-  },
-  {
-    path: 'apiz',
-    component: ApizComponent
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  }
-];
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+
+@NgModule({
+  imports: [
+      RouterModule.forRoot([
+      {
+        path: '',
+        component: LandingComponent
+      },
+      {
+        path: 'home',
+        component: LandingComponent
+      },
+      {
+        path: 'apiz',
+        loadChildren: 'app/apiz/apiz.module#ApizModule'
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      }
+    ])
+  ],
+  exports: [
+    RouterModule
+  ]
+})
+export class AppRoutingModule {}

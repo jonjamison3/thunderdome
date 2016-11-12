@@ -1,13 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import {routing} from './apiz.routing';
+import { MenuItem } from 'primeng/primeng';
 @Component({
   selector: 'app-apiz',
   templateUrl: './apiz.component.html',
   styleUrls: ['./apiz.component.css']
 })
 export class ApizComponent implements OnInit {
+  items: MenuItem[];
   constructor() { }
 
-  ngOnInit(){
+  ngOnInit() {
+    this.items = [
+      { label: 'spotify', icon: 'fa-spotify'  },
+      { label: 'facebook', icon: 'fa-facebook'  }
+    ]
   }
 }

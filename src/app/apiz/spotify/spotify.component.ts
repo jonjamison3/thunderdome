@@ -8,7 +8,7 @@ import { Observable }        from 'rxjs/Observable';
 })
 export class SpotifyComponent implements OnInit {
   songs: any[]; 
-  private searchTerm = new Subject<string>();
+  private searchTerm;
   tracks: Observable<any[]>;
   constructor(public spotifyService: SpotifyService) { }
 
