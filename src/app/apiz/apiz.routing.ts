@@ -11,9 +11,9 @@ import { FacebookComponent } from './facebook/facebook.component';
     RouterModule.forChild([
       {
         path: 'apiz',
+        component: ApizComponent,
         children: [
-          { path: '', component: ApizComponent },
-          { path: 'about', component: ApizComponent },
+          { path: '', component: SpotifyComponent },
           { path: 'spotify', component: SpotifyComponent },
           { path: 'facebook', component: FacebookComponent }
         ]

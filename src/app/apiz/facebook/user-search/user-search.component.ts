@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Header} from 'primeng/primeng';
+import {Footer} from 'primeng/primeng';
+
 import {UserSearchService} from './user-search.service';
 @Component({
   selector: 'app-user-search',
@@ -7,10 +10,9 @@ import {UserSearchService} from './user-search.service';
   providers: [UserSearchService]
 })
 export class UserSearchComponent implements OnInit {
-  items: any;
+  people: any[] = [];
   constructor(public userSearchService: UserSearchService) { }
   ngOnInit() {
-    this.userSearchService.getToken().subscribe(data => this.items = data);
   }
 
 }
