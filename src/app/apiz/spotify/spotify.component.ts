@@ -16,6 +16,10 @@ export class SpotifyComponent implements OnInit {
     this.spotifyService.getSetTracks().subscribe(tracks => this.tracks = tracks);
   }
   songSearch(searchTerm): void {
-    this.spotifyService.searchTracks(searchTerm).map(res => this.tracks = res);
+    this.spotifyService.searchTracks(searchTerm).map(res =>{
+      this.tracks = res;
+    }, (err)=> {
+      console.log(err);
+    } );
   }
 }

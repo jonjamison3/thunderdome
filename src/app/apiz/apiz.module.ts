@@ -10,6 +10,7 @@ import { SpotifyService } from './spotify/spotify.service';
 import { SpotifyComponent } from './spotify/spotify.component';
 import {
       DataTableModule,
+      PanelModule,
       DataGridModule
      } from 'primeng/primeng';
 import { FixedSearchComponent } from './spotify/fixed-search/fixed-search.component';
@@ -18,6 +19,7 @@ import { DynamicSearchComponent } from './spotify/dynamic-search/dynamic-search.
 @NgModule({
   imports: [
      ApizRoutingModule,
+     PanelModule,
      CommonModule,
      FormsModule,
      DataGridModule,

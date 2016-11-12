@@ -1,19 +1,33 @@
+<div class="container">
+Go ahead, do some typing here: <input type="text" class="text-xs-center" [(ngModel)]="term" (keyup)="searchDynamic(term)" />
+ <div class="clearfix"></div>
+<div *ngIf="!tracks">
+  <app-spotify-fixed></app-spotify-fixed>
+</div>
 <div *ngIf="tracks">
   <h3 class="text-success text-xs-center">Dynamic track search with Spotify</h3>
 </div>
-<div class="searching text-xs-center">
-  Go ahead, do some typing here: <input type="text" class="text-xs-center" [(ngModel)]="term" (keyup)="searchDynamic(term)" pInputText />
-</div>
-<div *ngIf="!tracks">
-  <app-spotify-fixed class="col-xs-12"></app-spotify-fixed>
-</div>
-<div class="text-xs-center">
-</div>
-<div *ngIf="tracks">
-  <p-dataTable [value]="tracks" class="col-xs-12">
-      <p-column field="name" header="name"></p-column>
-      <p-column field="artists.0.name" header="artist"></p-column>
-      <p-column field="album.name" header="album"></p-column>
-      <p-column field="popularity" header="Popularity"></p-column>
-  </p-dataTable>
+  <div class="col-md-8">
+    <p-dataGrid *ngIf="tracks" [value]="tracks" [paginator]="true" [rows]="20">
+      <template let-track>
+        <div class="row  ui-widget-content">
+          <div class="col-xs-3">
+            <img class="img-fluid" src="{{track.album.images[1].url}}">
+          </div>
+          <div class="col-xs-9">
+            <div>
+              {{track.artists[0].name}} - {{track.name}}
+            </div>
+            <div class="album-detail">
+              {{track.album.name}} - {{track.album.year}}
+            </div>
+            <div class="popularity">
+              Popularity: {{track.popularity}}%
+            </div>
+            <hr class="ui-widget-content" style="border-top:0">
+          </div>
+        </div>
+      </template>
+    </p-dataGrid>
+  </div>
 </div>

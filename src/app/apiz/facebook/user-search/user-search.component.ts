@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Header} from 'primeng/primeng';
-import {Footer} from 'primeng/primeng';
 
 import {UserSearchService} from './user-search.service';
 @Component({
