@@ -7,7 +7,6 @@ import { Observable  }        from 'rxjs/Observable';
   styleUrls: ['./spotify.component.css']
 })
 export class SpotifyComponent implements OnInit {
-  private searchTerm = '';
   tracks: Observable<any[]>;
   constructor(public spotifyService: SpotifyService) {
   }
@@ -16,9 +15,9 @@ export class SpotifyComponent implements OnInit {
     this.spotifyService.getSetTracks().subscribe(tracks => this.tracks = tracks);
   }
   songSearch(searchTerm): void {
-    this.spotifyService.searchTracks(searchTerm).map(res =>{
+    this.spotifyService.searchTracks(searchTerm).map(res => {
       this.tracks = res;
-    }, (err)=> {
+    }, (err) => {
       console.log(err);
     } );
   }
