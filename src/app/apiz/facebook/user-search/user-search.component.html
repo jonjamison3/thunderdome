@@ -1,8 +1,14 @@
-<input type="text" [(ngModel)]="searchTerm"/>
-<p-dataGrid *ngIf = "people.length>0" [value]="people">
-    <template let-person>
-        <div class="ui-g-12 ui-md-3">
-            
+<input type="text" [(ngModel)]="searchTerm" (keydown)="searchChangeHandler()" />
+<div class="col-md-8">
+    <div *ngFor="let person of people" class="row  ui-widget-content">
+        <div class="col-xs-3">
+        <img class="img-fluid" src="{{person.picture.data.url}}">
         </div>
-    </template>
-</p-dataGrid>
+        <div class="col-xs-9">
+        <div>
+            {{person.name}} - {{person.id}}
+        </div>
+        <hr class="ui-widget-content" style="border-top:0">
+        </div>
+    </div>
+  </div>

@@ -5,7 +5,7 @@ import { ApizComponent }       from './apiz.component';
 import { FormsModule } from '@angular/forms';
 import { FacebookComponent } from './facebook/facebook.component';
 import { UserSearchComponent } from './facebook/user-search/user-search.component';
-import { UserSearchService } from './facebook/user-search/user-search.service';
+import { FacebookService } from './facebook/facebook.service';
 import { SpotifyService } from './spotify/spotify.service';
 import { SpotifyComponent } from './spotify/spotify.component';
 import {
@@ -36,7 +36,7 @@ import { SnapchatComponent } from './snapchat/snapchat.component';
     SnapchatComponent
   ],
   providers: [
-    UserSearchService,
+    FacebookService,
     SpotifyService
     ]
 })
