@@ -1,10 +1,8 @@
-<input type="text" [(ngModel)]="searchTerm" aria-placeholder="Enter a full or partial name to search"/>
+<input type="text" [(ngModel)]="searchTerm"/>
 <p-dataGrid *ngIf = "people.length>0" [value]="people">
-    <!--<header>List of Cars</header>
-    <footer>Choose from the list.</footer>-->
     <template let-person>
         <div class="ui-g-12 ui-md-3">
-            Some content
+            
         </div>
     </template>
 </p-dataGrid>

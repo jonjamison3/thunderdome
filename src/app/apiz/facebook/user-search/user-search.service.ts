@@ -1,24 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { Observable }        from 'rxjs/Observable';
+import { Http, Response, UrlSearchParams } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-
+import { fbAppId } from '../../../shared/private/fbAppInfo';
 @Injectable()
 export class UserSearchService {
-  private APP_ID = '';
-  private APP_SECRET = '';
-  private EXISTING_ACCESS_TOKEN = '';
+  appId: number = fbAppId;
   constructor(private http: Http) {
 
   }
-  getToken(){
-    return this.http.get(`https://graph.facebook.com/oauth/access_token?client_id=${this.APP_ID}&
-    client_secret=${this.APP_SECRET}&
-    grant_type=fb_exchange_token&
-    fb_exchange_token=${this.EXISTING_ACCESS_TOKEN}`).map(res => res.json()[1]);
-  }
+
   searchFolks(term: string) {
+    let params = new UrlSearchParams;
+    params.set('appId', `${fbAppId}`);
+    window['FB'].init(params);
     return this.http.get( `http://api.spotify.com/v1/search?q=${term}&type=track`)
-    .map(res => res.json().tracks.items);
+    .map((res: Response) => res.json().tracks.items);
   }
 }

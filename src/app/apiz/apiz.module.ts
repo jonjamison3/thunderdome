@@ -15,6 +15,7 @@ import {
      } from 'primeng/primeng';
 import { FixedSearchComponent } from './spotify/fixed-search/fixed-search.component';
 import { DynamicSearchComponent } from './spotify/dynamic-search/dynamic-search.component';
+import { SnapchatComponent } from './snapchat/snapchat.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { DynamicSearchComponent } from './spotify/dynamic-search/dynamic-search.
     UserSearchComponent,
     SpotifyComponent,
     FixedSearchComponent,
-    DynamicSearchComponent
+    DynamicSearchComponent,
+    SnapchatComponent
   ],
   providers: [
     UserSearchService,

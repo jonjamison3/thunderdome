@@ -1,5 +1,5 @@
 
-import './rxjs-extensions';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -17,7 +17,8 @@ import { NavComponent } from './shared/nav/nav.component';
 import { TitleComponent } from './title/title.component';
 import { LandingComponent } from './landing/landing.component';
 import { HeaderComponent } from './shared/header/header.component';
-
+import './rxjs-extensions';
+import './rxjs-operators';
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,4 +1,9 @@
 <div class="jumbotron ui-widget-content">
-  <h1 class="">A little app </h1>
-   <p class="">for me to flex some API integration with Angular2</p>
+  <h1 class="">An thunderously extreme place</h1>
+  <p class="">For me to flex API muscle using Angular2</p>
+</div>
+
+<h2>Try Something Neat with...</h2> 
+<div *ngFor="let api_name of apiChoices; let i=index; "> 
+  <a (click)="apiNavigate(apiChoices[i])">{{api_name}}</a>
 </div>

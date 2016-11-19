@@ -16,6 +16,7 @@
 .settings/
 
 # misc
+/src/app/shared/private
 /.sass-cache
 /connect.lock
 /coverage/*
@@ -31,4 +32,5 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
-.env
+/.env
+/yarn.lock

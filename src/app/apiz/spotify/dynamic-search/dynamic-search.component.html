@@ -1,6 +1,6 @@
 <div class="container">
 Go ahead, do some typing here: <input type="text" class="text-xs-center" [(ngModel)]="term" (keyup)="searchDynamic(term)" />
- <div class="clearfix"></div>
+ 
 <div *ngIf="!tracks">
   <app-spotify-fixed></app-spotify-fixed>
 </div>
