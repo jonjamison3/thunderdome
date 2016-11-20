@@ -15,7 +15,7 @@ import {
      } from 'primeng/primeng';
 import { FixedSearchComponent } from './spotify/fixed-search/fixed-search.component';
 import { DynamicSearchComponent } from './spotify/dynamic-search/dynamic-search.component';
-import { SnapchatComponent } from './snapchat/snapchat.component';
+import { WikiComponent } from './wiki/wiki.component';
 
 @NgModule({
   imports: [
@@ -33,7 +33,7 @@ import { SnapchatComponent } from './snapchat/snapchat.component';
     SpotifyComponent,
     FixedSearchComponent,
     DynamicSearchComponent,
-    SnapchatComponent
+    WikiComponent
   ],
   providers: [
     FacebookService,

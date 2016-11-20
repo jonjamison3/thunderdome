@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class LandingComponent implements OnInit {
 
-  public apiChoices: string[] = ['Spotify', 'Snapchat', 'Facebook'];
+  public apiChoices: string[] = ['Spotify', 'Wiki', 'Facebook'];
   constructor(private router: Router) { }
   ngOnInit() {
   }

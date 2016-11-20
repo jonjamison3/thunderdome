@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ApizComponent }       from './apiz.component';
 import { SpotifyComponent } from './spotify/spotify.component';
 import { FacebookComponent } from './facebook/facebook.component';
-import { SnapchatComponent } from './snapchat/snapchat.component';
+import { WikiComponent } from './wiki/wiki.component';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { SnapchatComponent } from './snapchat/snapchat.component';
           { path: '', component: SpotifyComponent },
           { path: 'spotify', component: SpotifyComponent },
           { path: 'facebook', component: FacebookComponent },
-          { path: 'snapchat', component: SnapchatComponent }
+          { path: 'wiki', component: WikiComponent }
         ]
       }
     ])
