@@ -5,11 +5,13 @@
 /tmp
 
 # dependencies
-/node_modules
+/vendor
+/public/dome/node_modules
 /bower_components
 
 # IDEs and editors
 /.idea
+/.vscode
 .project
 .classpath
 *.launch
