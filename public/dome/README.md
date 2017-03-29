@@ -1,28 +1,62 @@
-# Ngtest
+# Thunderdome
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+ __     __                            __                    __                                  
+/\ \__ /\ \                          /\ \                  /\ \                                 
+\ \ ,_\\ \ \___    __  __    ___     \_\ \      __   _ __  \_\ \     ___     ___ ___       __   
+ \ \ \/ \ \  _ `\ /\ \/\ \ /' _ `\   /'_` \   /'__`\/\`'__\/'_` \   / __`\ /' __` __`\   /'__`\ 
+  \ \ \_ \ \ \ \ \\ \ \_\ \/\ \/\ \ /\ \L\ \ /\  __/\ \ \//\ \L\ \ /\ \L\ \/\ \/\ \/\ \ /\  __/ 
+   \ \__\ \ \_\ \_\\ \____/\ \_\ \_\\ \___,_\\ \____\\ \_\\ \___,_\\ \____/\ \_\ \_\ \_\\ \____\
+    \/__/  \/_/\/_/ \/___/  \/_/\/_/ \/__,_ / \/____/ \/_/ \/__,_ / \/___/  \/_/\/_/\/_/ \/____/
+                                                                                                
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+##To implement: 
 
-## Running unit tests
+Login in (email/pass) to send a text!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+##Basic About: 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Login in (email/pass) to send a text!
 
-## Further help
+##Basic Contact: 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+First Last, Profession, Interest, Interest level, Budget, "Point of last contact", Projects
+
+##Basic Profile/Login Benefit: 
+
+Login in (email/pass) to send a text!
+
+##Login with Facebook: 
+
+Login in (email/pass) to send a text!
+First/Last and less creepy api data fetched                                                                                                
+
+
+##People Picture Search: 
+
+Login in (email/pass) to send a text!
+First/Last and less creepy api data fetched                                                                                                
+
+
+##Google+: 
+
+Share contact details on register
+Contact info fetched
+
+
+##Login with Twitter: 
+
+Login in (email/pass) to send a text!                                                                                                
+-Send sms/dm on register
+
+
+##Search Tweets, Track Hashtag: 
+
+Login in (email/pass) to send a text!                                                                                                
+-Send sms/dm on register

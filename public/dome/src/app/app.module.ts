@@ -13,20 +13,16 @@ import {
         MenuModule
       } from 'primeng/primeng'; 
 import { ApizModule } from './apiz/apiz.module';
-import { NavComponent } from './shared/nav/nav.component';
+import { NavModule } from './shared/modules/nav/nav.module';
 import { TitleComponent } from './title/title.component';
 import { LandingComponent } from './landing/landing.component'; 
-import { HeaderComponent } from './shared/header/header.component';
-import './rxjs-extensions';
-import './rxjs-operators';
+import { HeaderModule } from './shared/modules/header/header.module';
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    NavComponent,
     TitleComponent,
     LandingComponent,
-    HeaderComponent,
     LandingComponent,
   ],
   imports: [
@@ -39,6 +35,8 @@ import './rxjs-operators';
     TabMenuModule,
     MenuModule,
     SharedModule,
+    HeaderModule,
+    NavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

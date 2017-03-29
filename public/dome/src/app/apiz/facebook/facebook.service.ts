@@ -1,9 +1,11 @@
-import { Injectable, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Injectable } from '@angular/core';
+import { Http  } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
 //import { FbApp } from 'app/shared/private/fbAppInfo';
-import 'app/rxjs-operators';
 @Injectable()
-export class FacebookService {
+export class FacebookService { 
   // private appId: number = FbApp.id;
   // private appSecret: string = FbApp.secret;
   private accessToken: string;  
