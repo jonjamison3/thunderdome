@@ -1,10 +1,10 @@
-import { ThunderdomePage } from './app.po';
+import { NgtestPage } from './app.po';
 
-describe('thunderdome App', function() {
-  let page: ThunderdomePage;
+describe('ngtest App', () => {
+  let page: NgtestPage;
 
   beforeEach(() => {
-    page = new ThunderdomePage();
+    page = new NgtestPage();
   });
 
   it('should display message saying app works', () => {

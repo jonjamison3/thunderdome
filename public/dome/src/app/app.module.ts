@@ -11,11 +11,11 @@ import {
         TabMenuModule,
         SharedModule,
         MenuModule
-      } from 'primeng/primeng';
+      } from 'primeng/primeng'; 
 import { ApizModule } from './apiz/apiz.module';
 import { NavComponent } from './shared/nav/nav.component';
 import { TitleComponent } from './title/title.component';
-import { LandingComponent } from './landing/landing.component';
+import { LandingComponent } from './landing/landing.component'; 
 import { HeaderComponent } from './shared/header/header.component';
 import './rxjs-extensions';
 import './rxjs-operators';

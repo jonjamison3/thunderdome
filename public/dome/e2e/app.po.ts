@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class ThunderdomePage {
+export class NgtestPage {
   navigateTo() {
     return browser.get('/');
   }
