@@ -1,10 +1,9 @@
 # Thunderdome
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
 
 
- __     __                            __                    __                                  
+     __     __                            __                    __                                  
 /\ \__ /\ \                          /\ \                  /\ \                                 
 \ \ ,_\\ \ \___    __  __    ___     \_\ \      __   _ __  \_\ \     ___     ___ ___       __   
  \ \ \/ \ \  _ `\ /\ \/\ \ /' _ `\   /'_` \   /'__`\/\`'__\/'_` \   / __`\ /' __` __`\   /'__`\ 
